@@ -17,6 +17,9 @@ If/else statements = Evaluates (or checks) a condition. If the condition is true
   return "Get back to coding!";
 };*/
 
+console.log('hello')
+console.log('another test')
+
 
 /*
  * #1
