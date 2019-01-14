@@ -156,6 +156,14 @@ console.log('isEqual:', isEqual('pretty', 'pretty'));
  * Console.log your result.
 */
 
+function notEqual(first, second){
+  if(first !== second){
+    return "Opposites do attract.";
+  }else{
+    return "Cause it's like you're my mirror."
+  }
+}
+console.log('notEqual:', notEqual('gryffindor', 'slytherin'));
 
 /*
  * #8
