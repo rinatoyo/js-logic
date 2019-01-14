@@ -314,6 +314,28 @@ console.log('moneyTrain:', moneyTrain(200));
  * Console.log budget and doughnutBought again.
 */ 
 
+var budget = 50;
+var doughnutPrice = 4;
+var doughnutBought = 0;
+
+function buyDoughnut(){
+  if(budget >= doughnutPrice){ 
+   budget -= doughnutPrice;
+   doughnutBought++;
+  }
+ }
+ 
+ buyDoughnut();
+ console.log("budget ", budget);
+ console.log("bought ", doughnutBought);
+
+/*function buyDoughnut(){
+  return add(subtract(budget, doughnutPrice), doughnutBought);
+}
+console.log(buyDoughnut(budget, doughnutBought));
+
+Don't really understand this one, especially the if part because I don't know how you are able to determine the >= and -= and ++ from the question...*/
+
 /*Final Boss*/
 /*Create a function name dailySpecials which takes in a parameter: `special`.
 Inside the function, create a switch statement that will check the daily specials of your favorite restaurant (or make up your own daily specials for each day of the week.*/
