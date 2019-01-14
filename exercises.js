@@ -177,7 +177,14 @@ console.log('notEqual:', notEqual('gryffindor', 'slytherin'));
  * Console.log your result.
 */ 
 
-
+function spareChange(money){
+  if(money > 100){
+    return true;
+  }else{
+    return false;
+  }
+}
+console.log('spareChange:', spareChange(150));
 
 /*
  * #9
