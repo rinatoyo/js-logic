@@ -418,7 +418,6 @@ for (var i = 0; i<players.length; i++){
     console.log('myFavFoods:', myFavFoods[i]);
   }
 
-
 /*
  * #17
  * Function - sumItUp
@@ -434,7 +433,17 @@ for (var i = 0; i<players.length; i++){
  * Console.log your result.
 */
 
+var numArray = [2, 12, 4, 23, 8];
 
+function sumItUp(arr){
+  var total = 0;
+  for (var i = 0; i<arr.length; i++){
+    console.log(arr[i]);
+    total += arr[i];
+  }
+  return total;
+}
+console.log('sumItUp:', sumItUp(numArray));
 
 /*
  * #18
