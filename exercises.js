@@ -262,7 +262,7 @@ console.log('daClub:', daClub(25, 26));
  *  @param Datatype: Number `credit`
  *  @param Datatype: Boolean `thesis`
  *  @return Datatype: String
- *
+ 
  * If EITHER the number value is greater than or equal to 120 or the boolean value is true, then the function will return the message: "Congratulations on a job well done." Otherwise, return the message: "See you in summer school."
  * Console.log your result.
 */ 
@@ -276,6 +276,8 @@ function graduation(credits, thesis){
 }
 var grade = graduation(150, true);
 console.log('graduation:', grade);
+
+//Can just do console.log(graduation(150, true));
 
 /*
  * #13
@@ -319,12 +321,13 @@ var doughnutPrice = 4;
 var doughnutBought = 0;
 
 function buyDoughnut(){
-  if(budget >= doughnutPrice){ 
-   budget -= doughnutPrice;
-   doughnutBought++;
+  if(budget >= doughnutPrice){ //why is this >=? because we need to have enough money (budget)
+   budget -= doughnutPrice; //why is this -= because this also means budget = budget - price
+   doughnutBought++; //increment
   }
  }
  
+ buyDoughnut();
  buyDoughnut();
  console.log("budget ", budget);
  console.log("bought ", doughnutBought);
@@ -395,6 +398,15 @@ for (var i = 0; i<toyotaModels.length; i++){
  * "Player: 5"
 */
 
+var players = ['Player: 1', 'Player: 2', 'Player: 3', 'Player: 4', 'Player: 5'];
+for (var i = 0; i<players.length; i++){
+  console.log(players[i])
+}
+
+//Correct answer: 
+// for(var i = 1; i<=5; i++){
+//   console.log("player ", i);
+// }
 
 /* 
  * #16
