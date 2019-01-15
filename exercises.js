@@ -92,13 +92,13 @@ console.log(isGreaterThan(20,19));
 */
 
 function mustBeTrue(boo){
-  if(boo === true){
+  if(boo === 'cat'){
     return true;
   }else {
     return false;
   }
 }
-console.log(mustBeTrue(true));
+console.log(mustBeTrue('cat'));
 
 /*
  * #5
@@ -364,7 +364,7 @@ function dailySpecials(special){
     menu = 'Beef Burrito and Quesadilla Combo';
     break;
   }
-  return menu;
+  return menu; //Why is the retun outside the ending brace??
 }
 console.log('dailySpecials:', dailySpecials('Sunday'));
 
