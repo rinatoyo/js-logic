@@ -434,9 +434,9 @@ for (var i = 0; i<players.length; i++){
 */
 
 var numArray = [2, 12, 4, 23, 8];
+var total = 0;
 
 function sumItUp(arr){
-  var total = 0;
   for (var i = 0; i<arr.length; i++){
     console.log(arr[i]);
     total += arr[i];
@@ -464,6 +464,7 @@ var west = [];
 
 function allStars(ballers){
   for (var i = 0; i<ballers.length; i++){
+    console.log(ballers[i]) //This helps you check whether your function is working or not. If the ballers show, then it's good!
 if(i%2 ===0){
 east.push(ballers[i])
 }else{
@@ -489,6 +490,18 @@ east.push(ballers[i])
 
   var subOftheDay = ["Teriyaki Chicken", "Spicy Italian", "Turkey", "BMT", "Black Forest Ham", "Meatball Marinara", "Veggie"];
 
+  function subways(special){
+    for (var i = 0; i<special.length; i++){
+      if(i%2 === 1){
+      //console.log(special[i]);
+      special.splice(i, 1, 'Classic Tuna')
+      special[i] = "Classic Tuna";
+      }
+    }
+    return special;
+  }
+  subways(subOftheDay);
+  console.log('subOfTheDay:', subOftheDay);
 
 /*
 Final Boss
@@ -503,7 +516,20 @@ Final Boss
 */
 
 var phrase = "An apple a day keeps Alice feeling awesome!";
- 
+
+function removeLetter(str){
+  var newArr = [];
+  for(var i = 0; i<str.length; i++){
+    console.log(str[i]);
+    if(str[i] !== 'a' && str[i] !== "A"){
+      newArr.push(str[i]);
+    }
+  }
+  console.log(newArr);
+  return newArr;
+} 
+removeLetter(phrase);
+
   
   
 
